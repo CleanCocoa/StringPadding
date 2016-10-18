@@ -8,33 +8,42 @@ Swift String padding μ Library.
 
 The `String` extension provides a convenience method that defaults to right padding with whitespace filling:
 
-    String.padded(length: Int, filler: Character = " ", padding: Padding = .right) -> String
+```swift
+String.padded(length: Int, filler: Character = " ", padding: Padding = .right) -> String
+```
 
 The underlying `String.Padding` enum can be used directly, too. For example:
 
-    let leftPadding = String.Padding.left
-    let rightPadding = String.Padding.right
-    let centerPadding = String.Padding.center
+```swift
+let leftPadding = String.Padding.left
+let rightPadding = String.Padding.right
+let centerPadding = String.Padding.center
+```
 
 The `String.Padding` cases in turn expose:
 
-    String.Padding.pad(text: String, length: Int, filler: Character = " ") -> String
+```swift
+String.Padding.pad(text: String, length: Int, filler: Character = " ") -> String
+```
 
 ## Usage
 
 Use the convenience extension on `String`:
 
-    "y".padded(length: 5, filler: "x", padding: .right)
-    // "yxxxx"
+```swift
+"y".padded(length: 5, filler: "x", padding: .right)
+// "yxxxx"
+```
 
 That's useful to justify lines of text:
 
-    ["$9.99", "$100.00"]
-        .map { $0.padded(length: 10, padding: .left) }
-        .join(separator: "\n")
-    // "     $9.99"
-    // "   $100.00"
- 
+```swift
+["$9.99", "$100.00"]
+    .map { $0.padded(length: 10, padding: .left) }
+    .join(separator: "\n")
+// "     $9.99"
+// "   $100.00"
+``` 
 
 ## License
 
