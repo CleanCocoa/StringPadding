@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		506C623B1DB61366000E5C01 /* StringPadding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506C62311DB61366000E5C01 /* StringPadding.framework */; };
 		506C62421DB61366000E5C01 /* StringPadding.h in Headers */ = {isa = PBXBuildFile; fileRef = 506C62341DB61366000E5C01 /* StringPadding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		506C624C1DB61431000E5C01 /* String+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506C624B1DB61431000E5C01 /* String+Padding.swift */; };
+		50FFB1D91DB614B9007A8BD7 /* String+PaddingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FFB1D81DB614B9007A8BD7 /* String+PaddingTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,8 @@
 		506C62351DB61366000E5C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		506C623A1DB61366000E5C01 /* StringPaddingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StringPaddingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		506C62411DB61366000E5C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		506C624B1DB61431000E5C01 /* String+Padding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Padding.swift"; sourceTree = "<group>"; };
+		50FFB1D81DB614B9007A8BD7 /* String+PaddingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+PaddingTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				506C62341DB61366000E5C01 /* StringPadding.h */,
+				506C624B1DB61431000E5C01 /* String+Padding.swift */,
 				506C62351DB61366000E5C01 /* Info.plist */,
 			);
 			path = StringPadding;
@@ -78,6 +83,7 @@
 		506C623E1DB61366000E5C01 /* StringPaddingTests */ = {
 			isa = PBXGroup;
 			children = (
+				50FFB1D81DB614B9007A8BD7 /* String+PaddingTests.swift */,
 				506C62411DB61366000E5C01 /* Info.plist */,
 			);
 			path = StringPaddingTests;
@@ -145,10 +151,12 @@
 				TargetAttributes = {
 					506C62301DB61366000E5C01 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					506C62391DB61366000E5C01 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -193,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				506C624C1DB61431000E5C01 /* String+Padding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50FFB1D91DB614B9007A8BD7 /* String+PaddingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +323,7 @@
 		506C62461DB61366000E5C01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -326,6 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cleancocoa.StringPadding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -333,6 +345,7 @@
 		506C62471DB61366000E5C01 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -353,11 +366,14 @@
 		506C62491DB61366000E5C01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = StringPaddingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cleancocoa.StringPaddingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -365,6 +381,8 @@
 		506C624A1DB61366000E5C01 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = StringPaddingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
