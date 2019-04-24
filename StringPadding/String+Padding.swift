@@ -36,8 +36,8 @@ extension String {
             case .center:
                 let halfDistance = padding.distance(from: padding.startIndex, to: padding.endIndex) / 2
                 let halfIndex = padding.index(padding.startIndex, offsetBy: halfDistance)
-                let leftHalf = padding.substring(to: halfIndex)
-                let rightHalf = padding.substring(from: halfIndex)
+                let leftHalf = padding[..<halfIndex]
+                let rightHalf = padding[halfIndex...]
                 return leftHalf + text + rightHalf
             }
         }
