@@ -29,8 +29,8 @@
 		506C62351DB61366000E5C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		506C623A1DB61366000E5C01 /* StringPaddingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StringPaddingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		506C62411DB61366000E5C01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		506C624B1DB61431000E5C01 /* String+Padding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Padding.swift"; sourceTree = "<group>"; };
-		50FFB1D81DB614B9007A8BD7 /* String+PaddingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+PaddingTests.swift"; sourceTree = "<group>"; };
+		506C624B1DB61431000E5C01 /* String+Padding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+Padding.swift"; path = "../Sources/StringPadding/String+Padding.swift"; sourceTree = "<group>"; };
+		50FFB1D81DB614B9007A8BD7 /* String+PaddingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+PaddingTests.swift"; path = "../Tests/StringPaddingTests/String+PaddingTests.swift"; sourceTree = "<group>"; };
 		50FFB1DA1DB614FB007A8BD7 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		50FFB1DB1DB614FB007A8BD7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
